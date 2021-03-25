@@ -13,7 +13,7 @@ let timeColor = null;
 
 startBtn.addEventListener('click', () => {
     timeColor = setInterval(() => {
-        const randomIndex = randomIntegerFromInterval(0, 5)
+        const randomIndex = randomIntegerFromInterval(0, colors.length)
         document.body.style.backgroundColor = colors[randomIndex]
     }, 1000)
 
